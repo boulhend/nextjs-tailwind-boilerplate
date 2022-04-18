@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => (
-  <h1 className="mx-5 text-blue-800">Next tailiwindcss starter</h1>
-);
+const Home: NextPage = () => {
+  return <h1 className="p-2 pt-4">Next tailiwindcss starter</h1>;
+};
 
 export default Home;

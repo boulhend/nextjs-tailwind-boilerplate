@@ -1,11 +1,18 @@
 {
+  "plugins": ["prettier", "@typescript-eslint"],
   "extends": [
-    "airbnb-base",
+    "airbnb",
+    "airbnb-typescript",
     "next/core-web-vitals",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
-  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/jsx-props-no-spreading": "off", // Allow Prop spreading( _app.tsx uses spread operator)
+    "react/function-component-definition": "off" // Allow function Cmoponents to be function declaration
   }
 }
