@@ -13,6 +13,6 @@
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-props-no-spreading": "off", // Allow Prop spreading( _app.tsx uses spread operator)
-    "react/function-component-definition": "off" // Allow function Cmoponents to be function declaration
+    "react/function-component-definition": "off" // Allow function Components to be function declaration
   }
 }
